@@ -30,6 +30,7 @@ RUN apt update && \
           -D BUILD_opencv_gpu=OFF \
           -D BUILD_PERF_TESTS=OFF \
           -D WITH_IPP=OFF \
+          -D CUDA_NVCC_FLAGS=--Wno-deprecated-gpu-targets \
           -D PYTHON_DEFAULT_EXECUTABLE=$(which python2) \
           .. && \
     make -j"$(nproc)" && \
