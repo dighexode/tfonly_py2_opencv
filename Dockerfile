@@ -1,5 +1,5 @@
 FROM baikangwang/tensorflow_gpu:tfonly_py2
-MAINTAINER Baker Wang <baikangwang@hotmail.com>
+MAINTAINER dighexode <dighexode@163.com>
 
 # referenced from <https://hub.docker.com/r/kevin8093/tf_opencv_contrib/>
 
@@ -51,4 +51,3 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
     CMD ["/bin/bash"]
-	
