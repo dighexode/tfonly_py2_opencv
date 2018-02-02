@@ -27,7 +27,7 @@ RUN apt update && \
     cd /usr/local/src/opencv && mkdir build && cd build && \
     cmake -D CMAKE_INSTALL_PREFIX=/usr/local \
           -D BUILD_TESTS=OFF \
-          -D BUILD_opencv_gpu=ON \
+          -D BUILD_opencv_gpu=OFF \
           -D BUILD_PERF_TESTS=OFF \
           -D WITH_IPP=OFF \
           -D PYTHON_DEFAULT_EXECUTABLE=$(which python2) \
